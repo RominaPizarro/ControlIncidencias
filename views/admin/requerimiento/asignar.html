@@ -62,54 +62,67 @@
     </nav>
 
     <div class="container mt-3">
-        <h3>Requerimientos</h3>
+        <h3>Asignar requerimiento</h3>
         <hr>
 
-        <form action="" method="get">
-            <label for="filter" class="form-label">Buscar por usuario o descripción</label>
-            <div class="row g-3">
-                <div class="col-md-6">
-                    <input type="text" class="form-control" id="filter">
+        <div class="row align-items-start">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-4">
+                        <label><b>Código : </b></label>
+                    </div>
+                    000101
                 </div>
-                <div class="col-auto">
-                    <input class="btn btn-dark" type="submit" value="Buscar">
+                <div class="row">
+                    <div class="col-4">
+                        <label><b>Fecha : </b></label>
+                    </div>
+                    2023-09-12 03:00
                 </div>
-                <div class="col text-end">
-                    <a class="btn btn-success" href="./add.html">Crear Nuevo</a>
+                <div class="row">
+                    <div class="col-4">
+                        <label><b>Descripción : </b></label>
+                    </div>
+                    <div class="col p-0">
+                        No hay red en algunas máquinas del área de atención de cliente
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label><b>Área : </b></label>
+                    </div>
+                    Atención al cliente
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label><b>Usuario crea : </b></label>
+                    </div>
+                    Anna Gutierrez
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label><b>Estado : </b></label>
+                    </div>
+                    pendiente
                 </div>
             </div>
-        </form>
-
-        <table class="table mt-3">
-            <tr>
-                <th>Código</th>
-                <th>Fecha</th>
-                <th>Área</th>
-                <th>Estado</th>
-                <th>Descripción</th>
-                <th></th>
-            </tr>
-            <tr>
-                <td>000101</td>
-                <td>2023-09-12 03:00</td>
-                <td>Atención al cliente</td>
-                <td>Pendiente</td>
-                <td>No hay red en algunas máquinas del área de atención de cliente</td>
-                <td class="text-end">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Opciones
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./edit.html">Editar</a></li>
-                            <li><a class="dropdown-item" href="./index.html">Eliminar</a></li>
-                            <li><a class="dropdown-item" href="./asignar.html">Asignar responsable</a></li>
-                        </ul>
+            <div class="col-6">
+                <form action="" method="post">
+                    <div class="mb-3">
+                        <label for="usuario_id" class="form-label">Asignar a usuario <b class="text-danger">*</b></label>
+                        
+                        <select name="usuario_id" class="form-control" required>
+                            <option value="1">Jose Pardo</option>
+                            <option value="2">Pepito Pérez</option>
+                        </select>
                     </div>
-                </td>
-            </tr>
-        </table>
+
+                    <div class="text-end">
+                        <input class="btn btn-success" type="submit" name="action" value="Asignar requerimiento">
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
