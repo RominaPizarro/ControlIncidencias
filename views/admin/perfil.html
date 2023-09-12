@@ -111,12 +111,14 @@
                 <form action="" method="post" class="was-validated">
                     <div class="mb-3">
                         <label for="usuario" class="form-label">Usuario <b class="text-danger">*</b></label>
-                        <input class="form-control" type="text" name="usuario" value="default" required>
+                        <input class="form-control" type="text" name="usuario" value="default" readonly required>
                     </div>
 
                     <div class="mb-3">
                         <label for="password" class="form-label">Password <b class="text-danger">*</b></label>
                         <input class="form-control" type="password" name="password" required>
+
+                        <div class="invalid-feedback">El campo Password es requerido</div>
                     </div>
 
                     <div class="text-end">
