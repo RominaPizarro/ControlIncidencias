@@ -62,79 +62,30 @@
     </nav>
 
     <div class="container mt-3">
-        <h3>Usuario : Editar</h3>
+        <h3>Área : Editar</h3>
         <hr>
 
         <form action="" method="post" class="was-validated">
-            <div class="d-flex flex-row">
-                <div class="col-6 me-1">
+            
+            <div class="row">
+                <div class="col-12">
                     <div class="mb-2">
-                        <label for="nombres" class="form-label">Nombres <b class="text-danger">*</b></label>
-                        <input class="form-control" type="text" name="nombres" value="Default" required>
-                        
-                        <div class="invalid-feedback">El campo Nombres es requerido</div>
+                        <label for="nombre" class="form-label">Nombre de área <b class="text-danger">*</b></label>
+                        <input class="form-control" type="text" name="nombre" value="Sistemas" required>
+                                                
+                        <div class="invalid-feedback">El campo Nombre de área es requerido</div>
                     </div>
 
                     <div class="mb-2">
-                        <label for="apellidos" class="form-label">Apellidos <b class="text-danger">*</b></label>
-                        <input class="form-control" type="text" name="apellidos" value="Default" required>
-                        
-                        <div class="invalid-feedback">El campo Apellidos es requerido</div>
-                    </div>
-
-                    <div class="mb-2">
-                        <label for="email" class="form-label">Email <b class="text-danger">*</b></label>
-                        <input class="form-control" type="email" name="email" value="Default@gmail.com" required>
-                        
-                        <div class="invalid-feedback">El campo Email es requerido</div>
-                    </div>
-
-                    <div class="mb-2">
-                        <label for="telefono" class="form-label">Telefono <b class="text-danger">*</b></label>
-                        <input class="form-control" type="text" name="telefono" value="12345678" >
-                    </div>
-                </div>
-
-                <div class="col-6 ms-1">
-                    <div class="mb-2">
-                        <label for="fecha_nacimiento" class="form-label">Fecha de nacimiento <b
-                                class="text-danger">*</b></label>
-                        <input class="form-control" type="date" name="fecha_nacimiento" value="2023-12-12" required>
-                        
-                        <div class="invalid-feedback">El campo Fecha de nacimiento es requerido</div>
-                    </div>
-
-                    <div class="mb-2">
-                        <label for="usuario" class="form-label">Usuario <b class="text-danger">*</b></label>
-                        <input class="form-control" type="text" name="usuario" value="admin" required>
-                        
-                        <div class="invalid-feedback">El campo Usuario es requerido</div>
-                    </div>
-
-                    <div class="mb-2">
-                        <label for="password" class="form-label">Password <b class="text-danger">*</b></label>
-                        <input class="form-control" type="password" name="password" value="admin" required>
-                        
-                        <div class="invalid-feedback">El campo Password es requerido</div>
-                    </div>
-
-                    <div class="mb-2">
-                        <label for="rol" class="form-label">Rol <b class="text-danger">*</b></label>
-                        <select name="rol" class="form-control" required>
-                            <option value="Administrador">Administrador</option>
-                            <option value="Personal">Personal</option>
-                        </select>
-                        
-                        <div class="invalid-feedback">El campo Password es requerido</div>
+                        <label for="descripcion" class="form-label">Descripción </label>
+                        <input class="form-control" type="text" name="descripcion">
                     </div>
                 </div>
             </div>
-
-            <div class="mb-2">
+            <div class="form-group">
                 <input class="btn btn-primary" type="submit" name="action" value="Registrar">
                 <a class="btn btn-danger" href="./index.html"> Cancelar</a>
             </div>
-
         </form>
     </div>
 
