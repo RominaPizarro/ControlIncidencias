@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área - index</title>
+    <title>Estado - index</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
@@ -62,11 +62,11 @@
     </nav>
 
     <div class="container mt-3">
-        <h3>Áreas</h3>
+        <h3>Estados</h3>
         <hr>
 
         <form action="" method="get">
-            <label for="filter" class="form-label">Buscar por nombre de área</label>
+            <label for="filter" class="form-label">Buscar por nombre del estado</label>
             <div class="row g-3">
                 <div class="col-md-6">
                     <input type="text" class="form-control" id="filter">
@@ -87,8 +87,42 @@
                 <th></th>
             </tr>
             <tr>
-                <td>Sistemas</td>
-                <td>Sin descripción</td>
+                <td>Pendiente</td>
+                <td>El estado del requerimiento es Pendiente</td>
+                <td class="text-end">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Opciones
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./edit.html">Editar</a></li>
+                            <li><a class="dropdown-item" href="./index.html">Eliminar</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>En proceso</td>
+                <td>El estado del requerimiento es En proceso</td>
+                <td class="text-end">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Opciones
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./edit.html">Editar</a></li>
+                            <li><a class="dropdown-item" href="./index.html">Eliminar</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Rechazado</td>
+                <td>El estado del requerimiento es Rechazado</td>
                 <td class="text-end">
                     <div class="dropdown">
                         <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
